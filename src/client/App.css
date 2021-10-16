@@ -28,6 +28,7 @@ body {
 }
 .pill {
   border-radius: 18px;
+  height: 58px;
 }
 .description-card {
   border-radius: 10px;
@@ -88,7 +89,6 @@ input:-webkit-autofill:active {
 }
 .search-container {
   width: 320px;
-  height: 58px;
 }
 .search-input {
   outline: none;

@@ -12,8 +12,8 @@ const UsersList: React.FC<UserListProps> = ({ users, showAddUserForm }) => (
   <div className="container">
     <div className="mt-5">
       <div className="nav-title-label ">Our Users</div>
-      <div className="d-flex align-items-center justify-content-between">
-        <div className="p-2 mt-4 search-container pill bg-white d-flex align-items-center ">
+      <div className="mt-4 d-flex align-items-center justify-content-between">
+        <div className="search-container pill bg-white d-flex align-items-center ">
           <Search className="mx-3" />
           <input placeholder="Search for a user" className="search-input" />
         </div>
