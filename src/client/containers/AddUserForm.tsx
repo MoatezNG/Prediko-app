@@ -24,7 +24,7 @@ const AddUserForm: React.FC<AddUserFormProps> = ({ onSumbit, showUserlist }) => 
           </div>
           <div>
             <button className=" primary-button" type="submit">
-              <div className="button-text text-white p-1">save and add</div>
+              <div className="button-text text-white">save and add</div>
             </button>
           </div>
         </div>

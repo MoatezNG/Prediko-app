@@ -4,6 +4,7 @@ import * as React from 'react';
 import { ISelectorOption } from 'client/types/ISelectorOption';
 import { FieldErrors } from 'react-hook-form';
 import customStyles from './styles';
+import './_Select.css';
 
 export interface Props {
   id?: string;
@@ -47,7 +48,7 @@ const Select: React.FC<Props> = ({
         ref={ref}
         isMulti={multi}
         options={options}
-        placeholder={placeholder}
+        placeholder={<div className="react-select-placeholder">{placeholder}</div>}
         isClearable={isClearable}
         isSearchable={isSearchable}
         // @ts-ignore
