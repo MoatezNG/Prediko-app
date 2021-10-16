@@ -90,3 +90,12 @@ input:-webkit-autofill:active {
   width: 320px;
   height: 58px;
 }
+.search-input {
+  outline: none;
+  border: none;
+}
+.search-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}

@@ -15,7 +15,6 @@ export interface Props {
   placeholder?: string;
   label?: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  ref?: any;
   onChange: (value: unknown) => void;
   error?: FieldErrors;
   value: ISelectorOption | ISelectorOption[];
@@ -28,7 +27,6 @@ const Select: React.FC<Props> = ({
   isClearable = true,
   isSearchable = false,
   label,
-  ref,
   placeholder,
   onChange,
   error,
@@ -45,7 +43,6 @@ const Select: React.FC<Props> = ({
         </span>
       </label>
       <ReactSelect
-        ref={ref}
         isMulti={multi}
         options={options}
         placeholder={<div className="react-select-placeholder">{placeholder}</div>}

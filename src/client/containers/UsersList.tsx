@@ -15,7 +15,7 @@ const UsersList: React.FC<UserListProps> = ({ users, showAddUserForm }) => (
       <div className="d-flex align-items-center justify-content-between">
         <div className="p-2 mt-4 search-container pill bg-white d-flex align-items-center ">
           <Search className="mx-3" />
-          <div className="button-text">Search for a user</div>
+          <input placeholder="Search for a user" className="search-input" />
         </div>
         <div
           role="button"
@@ -29,10 +29,10 @@ const UsersList: React.FC<UserListProps> = ({ users, showAddUserForm }) => (
         </div>
       </div>
       <div className="d-flex row mt-4">
-        {users?.map((user) => {
+        {users?.map((user, index) => {
           const { firstname, lastname, role } = user;
           return (
-            <div className="col-4 mt-4">
+            <div key={`${index.toString()}`} className="col-4 mt-4">
               <div>
                 <div className="bg-white p-3 d-flex description-card justify-content-between align-items-center">
                   <div>
