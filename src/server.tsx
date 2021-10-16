@@ -1,10 +1,7 @@
-import store from 'client/_redux/app/store';
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router-dom';
-import backendRoutes from 'server/routes';
 
 import App from './client/App';
 
@@ -40,9 +37,7 @@ export const renderApp = (req: express.Request, res: express.Response) => {
 
   const markup = renderToString(
     <StaticRouter context={context} location={req.url}>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <App />
     </StaticRouter>,
   );
 
@@ -73,7 +68,6 @@ export const renderApp = (req: express.Request, res: express.Response) => {
 };
 
 const server = express();
-server.use(process.env.RAZZLE_API_PREFIX || '', backendRoutes);
 server
   .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR!))

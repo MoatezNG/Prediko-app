@@ -86,3 +86,7 @@ input:-webkit-autofill:active {
 .text-error {
   font-size: 11px;
 }
+.search-container {
+  width: 320px;
+  height: 58px;
+}

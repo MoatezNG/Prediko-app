@@ -1,6 +1,7 @@
 import { User } from 'client/models/User';
 import ArrowRight from 'client/svg/ArrowRight';
 import Plus from 'client/svg/Plus';
+import Search from 'client/svg/Search';
 import React from 'react';
 
 interface UserListProps {
@@ -11,7 +12,11 @@ const UsersList: React.FC<UserListProps> = ({ users, showAddUserForm }) => (
   <div className="container">
     <div className="mt-5">
       <div className="nav-title-label ">Our Users</div>
-      <div className="d-flex align-items-center justify-content-end">
+      <div className="d-flex align-items-center justify-content-between">
+        <div className="p-2 mt-4 search-container pill bg-white d-flex align-items-center ">
+          <Search className="mx-3" />
+          <div className="button-text">Search for a user</div>
+        </div>
         <div
           role="button"
           tabIndex={0}
