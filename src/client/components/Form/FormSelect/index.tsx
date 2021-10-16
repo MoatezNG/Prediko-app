@@ -16,13 +16,12 @@ const FormSelect: React.FC<IProps> = ({ name, ...selectProps }) => {
       name={name}
       rules={{ required: true }}
       control={control}
-      render={({ field: { onChange, value, ref } }) => (
+      render={({ field: { onChange, value } }) => (
         <Select
           {...selectProps}
           id={name}
           onChange={onChange}
           value={value}
-          ref={ref}
           error={errors[name]}
         />
       )}
