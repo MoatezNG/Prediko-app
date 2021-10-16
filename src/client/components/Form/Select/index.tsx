@@ -14,7 +14,6 @@ export interface Props {
   isSearchable?: boolean;
   placeholder?: string;
   label?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onChange: (value: unknown) => void;
   error?: FieldErrors;
   value: ISelectorOption | ISelectorOption[];

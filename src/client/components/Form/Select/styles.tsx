@@ -10,7 +10,7 @@ const customStyles = {
       display: 'block',
       fontSize: 'inherit',
       padding: '8px 12px',
-      width: '100%',
+      width: '17.375rem',
       userSelect: 'none',
       WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
     };
@@ -21,7 +21,7 @@ const customStyles = {
       display: 'block',
       fontSize: 'inherit',
       padding: '8px 12px',
-      width: '100%',
+      width: '17.375rem',
       userSelect: 'none',
     };
 
@@ -33,6 +33,10 @@ const customStyles = {
   singleValue: (provided: any) => ({
     ...provided,
     color: 'rgba(0,0,0,1)',
+  }),
+  menu: (provided: any) => ({
+    ...provided,
+    width: '17.375rem',
   }),
   control: (__provided: any, _state: any) => {
     const focusedControlStyles = {
