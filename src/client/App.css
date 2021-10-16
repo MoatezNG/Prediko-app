@@ -3,4 +3,86 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+}
+.form-label-size {
+  font-size: 0.75rem;
+}
+.title-label {
+  font-size: 1.063rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.nav-title-label {
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+}
+.primary-button {
+  background-color: #52d8b0;
+  border: none;
+  border-radius: 1rem;
+  height: 3rem;
+}
+.pill {
+  border-radius: 18px;
+}
+.description-card {
+  border-radius: 10px;
+}
+.button-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card-title-text {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+.role-text {
+  font-size: 12px;
+  color: #7f85a2;
+  line-height: 20px;
+  font-style: normal;
+}
+.form-custom-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9fa3b9;
+}
+.custom-input {
+  width: 17.375rem;
+  height: 3rem;
+  padding: 0rem 0.938rem 0rem 0.938rem;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 2px solid rgba(143, 146, 161, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+.custom-input:focus {
+  border: 2px solid rgba(143, 146, 161, 0.2);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.custom-input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #7f85a2;
+}
+.text-error {
+  font-size: 11px;
 }

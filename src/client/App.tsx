@@ -1,14 +1,13 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
 import './App.css';
 import SideBar from './components/SideBar/SideBar';
-import Home from './pages/Home';
+import UserPage from './pages/UserPage';
 
 const App = (): JSX.Element => (
   <SideBar>
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={UserPage} />
     </Switch>
   </SideBar>
 );

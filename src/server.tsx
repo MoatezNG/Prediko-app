@@ -58,6 +58,9 @@ export const renderApp = (req: express.Request, res: express.Response) => {
         <meta charSet='utf-8' />
         <title>Welcome to Razzle</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
         ${cssLinksFromAssets(assets, 'client')}
     </head>
     <body>

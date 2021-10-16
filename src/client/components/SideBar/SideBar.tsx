@@ -12,15 +12,15 @@ const SideBar: React.FC = ({ children }) => {
   return (
     <div className="d-flex row m-0 p-0">
       <div
-        className="position-fixed  d-flex flex-column vh-100 align-items-center flex-shrink-0 bg-light "
+        className="position-fixed  d-flex flex-column vh-100 align-items-center flex-shrink-0 bg-white "
         style={{ width: '6.25rem' }}
       >
-        <a href="/" className="py-4 pe-2 ps-2">
+        <div className="py-4 pe-2 ps-2">
           <Logo />
-        </a>
+        </div>
         <ul className="nav nav-pills nav-flush flex-column mb-auto ">
-          <SideBarLink link="/group" Icon={<GroupUsers active={pathname === '/group'} />} />
-          <SideBarLink link="/user" Icon={<User active={pathname === '/user'} />} />
+          <SideBarLink link="/groups" Icon={<GroupUsers active={pathname === '/groups'} />} />
+          <SideBarLink link="/" Icon={<User active={pathname === '/'} />} />
           <SideBarLink
             link="/settings"
             Icon={<Settings active={pathname === '/settings'} />}
@@ -32,7 +32,7 @@ const SideBar: React.FC = ({ children }) => {
           </div>
         </div>
       </div>
-      <div style={{ paddingLeft: '8rem' }}>{children}</div>
+      <div style={{ paddingLeft: '7.5rem' }}>{children}</div>
     </div>
   );
 };
